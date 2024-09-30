@@ -37,7 +37,7 @@ export const HomepageService: React.FC = () => {
                                 width="100%" 
                                 height="200px" 
                             />
-                            <Box className="p-4 flex items-center justify-between bg-gray-100">
+                            <Box className="p-4 flex items-center justify-between bg-blue-200">
                                 <Text fontWeight="bold" isTruncated>
                                     {service.title}
                                 </Text>
@@ -58,7 +58,7 @@ export const HomepageService: React.FC = () => {
                 </SimpleGrid>
                 <Box className="my-5 text-center">
                                 <Link href="">
-                                    <Button variant="outline" size="lg" className="py-3 px-5">
+                                    <Button variant="outline" size="lg" className="bg-blu py-3 px-5">
                                         Explore Services
                                     </Button>
                                 </Link>

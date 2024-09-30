@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Flex, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export const Banner: React.FC = () => {
@@ -21,90 +21,156 @@ export const Banner: React.FC = () => {
     return (
         <Box className="banner">
             <Slider {...settings}>
-                <Box className="relative">
-                    <img
-                        className="w-full"
+                {/* First Slide */}
+                <Box position="relative">
+                    <Image
+                        width="100%"
                         src={require("../assets/images/home1.jpg")}
-                        alt="Banner Slides"
+                        alt="Banner Slide 1"
                     />
-                    <Box className="absolute top-0 left-0 w-full h-full flex items-center bg-opacity-80 bg-gray-900">
-                        <Box className="container">
-                            <Box className="flex justify-center pl-8 mb-10">
-                                <Box className="sm:w-10/12 lg:w-8/12">
-                                    <Heading as="h5" size="sm" color="yellow.400" mb={2} className="uppercase animate__animated animate__slideInDown title downed">
-                                        ProGrowing Taskify
-                                    </Heading>
-                                    <Heading as="h1" size="4xl" color="white" mb={4} className="animate__animated animate__slideInDown topic">
-                                        ProGrowing Online Learning Platform
-                                    </Heading>
-                                    <Text
-                                        color="white"
-                                        mb={3}
-                                        pb={1}
-                                        fontWeight="light"
-                                        className="text-lg innertext"
-                                    >
-                                        Have access to ProGrowing Taskify, where you will be assigned projects
-                                        and assignments that will give you the needed experience, and help
-                                        you build your portfolio, and communication skills.
-                                    </Text>
-                                    <Link to="/about">
-                                        <Button variant="outline" className="md:py-4 sm:py-2 md:px-8 sm:px-6 mr-3 upped topic animate__animated animate__slideInLeft">
+                    <Flex
+                        position="absolute"
+                        top="0"
+                        left="0"
+                        width="100%"
+                        height="100%"
+                        alignItems="center"
+                        bg="rgba(0, 0, 0, 0.7)" 
+                    >
+                        <Box width="100%" px={{ base: 4, md: 10 }} mx="auto" textAlign="center">
+                            <Box maxWidth={{ base: "100%", lg: "70%" }} mx="auto">
+                                <Heading
+                                    as="h5"
+                                    size="sm"
+                                    color="yellow.400"
+                                    mb={2}
+                                    textTransform="uppercase"
+                                    animation="slideInDown 1s ease-in-out"
+                                >
+                                    Admission is FREE
+                                </Heading>
+                                <Heading
+                                    as="h1"
+                                    size="2xl"
+                                    color="white"
+                                    mb={4}
+                                    animation="slideInDown 1s ease-in-out"
+                                >
+                                    Secure Your Admission Free of Charge
+                                </Heading>
+                                <Text
+                                    color="white"
+                                    mb={3}
+                                    pb={1}
+                                    fontWeight="light"
+                                    fontSize="lg"
+                                >
+                                    There is no agent fee for admissions, and we truly believe 
+                                    that no one should pay to be admitted. Aside from any 
+                                    application fees remitted to the respective Universities, 
+                                    we do not charge any admission fee.
+                                </Text>
+                                <Flex justifyContent="center" mt={2}>
+                                    <Link to="/service/admission">
+                                        <Button
+                                            variant="outline"
+                                            colorScheme="blue"
+                                            size="lg"
+                                            mr={3}
+                                            animation="slideInLeft 1s ease-in-out"
+                                        >
                                             Read More
                                         </Button>
                                     </Link>
-                                    <Link to="/login">
-                                        <Button className="md:py-4 sm:py-2 md:px-8 sm:px-6 upped topic animate__animated animate__slideInRight">
-                                            Login
+                                    <Link to="/about">
+                                        <Button
+                                            colorScheme="blue"
+                                            size="lg"
+                                            animation="slideInRight 1s ease-in-out"
+                                        >
+                                            About Us
                                         </Button>
                                     </Link>
-                                </Box>
+                                </Flex>
                             </Box>
                         </Box>
-                    </Box>
+                    </Flex>
                 </Box>
-                <Box className="relative">
-                    <img
-                        className="w-full"
+
+                {/* Second Slide */}
+                <Box position="relative">
+                    <Image
+                        width="100%"
                         src={require("../assets/images/home2.jpg")}
-                        alt="Banner Slides"
+                        alt="Banner Slide 2"
                     />
-                    <Box className="absolute top-0 left-0 w-full h-full flex items-center bg-opacity-80 bg-gray-900">
-                        <Box className="container">
-                            <Box className="flex justify-center pl-8 mb-10">
-                                <Box className="sm:w-10/12 lg:w-8/12">
-                                    <Heading as="h5" size="sm" color="yellow.400" mb={2} className="uppercase animate__animated animate__slideInDown title downed">
-                                        Free Online Courses
-                                    </Heading>
-                                    <Heading as="h1" size="4xl" color="white" mb={4} className="animate__animated animate__slideInDown topic">
-                                        Learn From The Comfort of Your Home
-                                    </Heading>
-                                    <Text
-                                        color="white"
-                                        mb={3}
-                                        pb={1}
-                                        fontWeight="light"
-                                        className="text-lg innertext"
-                                    >
-                                        Learning is a wonderful experience, and learning from the best
-                                        makes everything ten times easier. The Progrowing mentors
-                                        and lead instructors are all here to make your learning
-                                        experience unforgettable.
-                                    </Text>
-                                    <Link to="/about">
-                                        <Button variant="outline" className="md:py-4 sm:py-2 md:px-8 sm:px-6 mr-3 topic upped animate__animated animate__slideInLeft">
+                    <Flex
+                        position="absolute"
+                        top="0"
+                        left="0"
+                        width="100%"
+                        height="100%"
+                        alignItems="center"
+                        bg="rgba(0, 0, 0, 0.7)"
+                    >
+                        <Box width="100%" px={{ base: 4, md: 10 }} mx="auto" textAlign="center">
+                            <Box maxWidth={{ base: "100%", lg: "70%" }} mx="auto">
+                                <Heading
+                                    as="h5"
+                                    size="sm"
+                                    color="yellow.400"
+                                    mb={2}
+                                    textTransform="uppercase"
+                                    animation="slideInDown 1s ease-in-out"
+                                >
+                                    Visa Assistance
+                                </Heading>
+                                <Heading
+                                    as="h1"
+                                    size="2xl"
+                                    color="white"
+                                    mb={4}
+                                    animation="slideInDown 1s ease-in-out"
+                                >
+                                    Smooth Visa Assistance for Every Journey
+                                </Heading>
+                                <Text
+                                    color="white"
+                                    mb={3}
+                                    pb={1}
+                                    fontWeight="light"
+                                    fontSize="lg"
+                                >
+                                    Whether you're traveling for business, study, or leisure, 
+                                    our dedicated visa support team ensures a seamless 
+                                    application process. We handle the details, so you 
+                                    can focus on your plans with peace of mind.
+                                </Text>
+                                <Flex justifyContent="center" mt={2}>
+                                    <Link to="/services/visa">
+                                        <Button
+                                            variant="outline"
+                                            colorScheme="blue"
+                                            size="lg"
+                                            mr={3}
+                                            animation="slideInLeft 1s ease-in-out"
+                                        >
                                             Read More
                                         </Button>
                                     </Link>
-                                    <Link to="/login">
-                                        <Button className="md:py-4 sm:py-2 md:px-8 sm:px-6 topic upped animate__animated animate__slideInRight">
-                                            Login
+                                    <Link to="/about">
+                                        <Button
+                                            colorScheme="blue"
+                                            size="lg"
+                                            animation="slideInRight 1s ease-in-out"
+                                        >
+                                            About Us
                                         </Button>
                                     </Link>
-                                </Box>
+                                </Flex>
                             </Box>
                         </Box>
-                    </Box>
+                    </Flex>
                 </Box>
             </Slider>
         </Box>

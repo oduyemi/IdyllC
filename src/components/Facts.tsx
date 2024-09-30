@@ -3,28 +3,28 @@ import React from "react";
 
 export const Facts: React.FC = () => {
     return (
-        <Box className="bg-gray-800 my-5 py-10">
+        <Box className="bg-gray-400 fact my-5 py-10">
             <Box className="container mx-auto">
                 <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4}>
                     <Box textAlign="center" className="wow fadeIn" data-wow-delay="0.1s">
-                        <Icon as={require("react-icons/fa").FaCheck} boxSize={10} color="white" />
-                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>1234</Heading>
-                        <Text color="white">Years Experience</Text>
+                        <Icon as={require("react-icons/fa").FaGlobe} boxSize={10} color="white" />
+                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>100+</Heading>
+                        <Text color="white">Countries Represented</Text>
                     </Box>
                     <Box textAlign="center" className="wow fadeIn" data-wow-delay="0.3s">
-                        <Icon as={require("react-icons/fa").FaUsersCog} boxSize={10} color="white" />
-                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>1234</Heading>
-                        <Text color="white">Expert Technicians</Text>
+                        <Icon as={require("react-icons/fa").FaUserFriends} boxSize={10} color="white" />
+                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>500+</Heading>
+                        <Text color="white">Students Supported</Text>
                     </Box>
                     <Box textAlign="center" className="wow fadeIn" data-wow-delay="0.5s">
-                        <Icon as={require("react-icons/fa").FaUsers} boxSize={10} color="white" />
-                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>1234</Heading>
-                        <Text color="white">Satisfied Clients</Text>
+                        <Icon as={require("react-icons/fa").FaUniversity} boxSize={10} color="white" />
+                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>300+</Heading>
+                        <Text color="white">Partner Institutions</Text>
                     </Box>
                     <Box textAlign="center" className="wow fadeIn" data-wow-delay="0.7s">
-                        <Icon as={require("react-icons/fa").FaWrench} boxSize={10} color="white" />
-                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>1234</Heading>
-                        <Text color="white">Completed Projects</Text>
+                        <Icon as={require("react-icons/fa").FaCheckCircle} boxSize={10} color="white" />
+                        <Heading as="h2" fontSize="2xl" color="white" mb={2}>95%</Heading>
+                        <Text color="white">Visa Success Rate</Text>
                     </Box>
                 </SimpleGrid>
             </Box>

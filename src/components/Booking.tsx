@@ -4,7 +4,6 @@ import React from "react";
 export const Booking: React.FC = () => {
   return (
     <Box className="my-5">
-      {/* Hero Section */}
       <Flex
         position="relative"
         className="video"
@@ -14,36 +13,24 @@ export const Booking: React.FC = () => {
         bg="blue.600"
         data-wow-delay="0.1s"
       >
-        <Button
-          className="btn-play"
-          bg="transparent"
-          borderRadius="full"
-          border="2px solid white"
-          width="80px"
-          height="80px"
-          _hover={{ bg: "transparent" }}
-          data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-          data-bs-target="#videoModal"
-        >
-          <Box as="span" color="white" fontSize="3xl">▶</Box>
-        </Button>
+        
         <Box
           position="absolute"
-          bottom="20px"
+          bottom="120px"
           textAlign="center"
           color="white"
         >
-          <Heading size="lg">Emergency Plumbing Service</Heading>
-          <Text fontSize="xl">24 Hours 7 Days a Week</Text>
+          <Heading size="lg">International Student Booking</Heading>
+          <Text fontSize="xl">Guidance & Support, 24/7</Text>
         </Box>
       </Flex>
 
       {/* Form Section */}
-      <Box className="container position-relative" marginTop="-6rem">
+      <Box className="container position-relative" marginTop="2rem">
         <Flex justifyContent="center">
-          <Box bg="gray.100" p={10} textAlign="center" rounded="md" shadow="lg">
+          <Box bg="gray.100" p={10}  className="md:ml-14" textAlign="center" rounded="md" shadow="lg" width={{ base: "90%", sm: "80%", md: "60%", lg: "50%" }}>
             <Heading as="h1" mb={4}>
-              Book For A Service
+              Book Your Consultation
             </Heading>
             <form>
               <Flex direction="column" gap={3}>
@@ -72,12 +59,12 @@ export const Booking: React.FC = () => {
                   borderColor="gray.300"
                   focusBorderColor="blue.400"
                 >
-                  <option value="1">Service 1</option>
-                  <option value="2">Service 2</option>
-                  <option value="3">Service 3</option>
+                  <option value="visa-assistance">Visa Assistance</option>
+                  <option value="admission-counseling">Admission Counseling</option>
+                  <option value="accommodation-help">Accommodation Help</option>
                 </Select>
                 <Input
-                  placeholder="Service Date"
+                  type="date"
                   size="lg"
                   borderRadius="md"
                   bg="white"
@@ -85,7 +72,7 @@ export const Booking: React.FC = () => {
                   focusBorderColor="blue.400"
                 />
                 <Textarea
-                  placeholder="Special Request"
+                  placeholder="Special Requests or Concerns"
                   size="lg"
                   borderRadius="md"
                   bg="white"

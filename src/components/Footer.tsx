@@ -4,7 +4,7 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <Box as="footer" bg="gray.200" pt={8} pb={6}>
+    <Box as="footer" bg="blue.200" pt={8} pb={6}>
       <Box maxW="7xl" mx="auto" px={4}>
         <Flex flexWrap="wrap" justifyContent={{ base: "center", lg: "space-between" }} textAlign={{ base: "center", lg: "left" }}>
           <Box w={{ base: "full", lg: "50%" }} px={4}>
@@ -40,13 +40,10 @@ export const Footer: React.FC = () => {
                   About Us
                 </Link>
                 <Link href="#" color="gray.600" _hover={{ color: "gray.800" }}>
-                  Blog
+                  Our Service
                 </Link>
                 <Link href="#" color="gray.600" _hover={{ color: "gray.800" }}>
-                  Github
-                </Link>
-                <Link href="#" color="gray.600" _hover={{ color: "gray.800" }}>
-                  Free Products
+                  Our Courses
                 </Link>
               </Stack>
             </Box>
@@ -55,9 +52,6 @@ export const Footer: React.FC = () => {
                 Other Resources
               </Text>
               <Stack spacing={2}>
-                <Link href="#" color="gray.600" _hover={{ color: "gray.800" }}>
-                  MIT License
-                </Link>
                 <Link href="#" color="gray.600" _hover={{ color: "gray.800" }}>
                   Terms & Conditions
                 </Link>
