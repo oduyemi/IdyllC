@@ -28,8 +28,8 @@ export const Booking: React.FC = () => {
       {/* Form Section */}
       <Box className="container position-relative" marginTop="2rem">
         <Flex justifyContent="center">
-          <Box bg="gray.100" p={10}  className="md:ml-14" textAlign="center" rounded="md" shadow="lg" width={{ base: "90%", sm: "80%", md: "60%", lg: "50%" }}>
-            <Heading as="h1" mb={4}>
+          <Box bg="gray.100" p={10}  className="md:ml-32" textAlign="center" rounded="md" shadow="lg" width={{ base: "90%", sm: "80%", md: "60%", lg: "50%" }}>
+            <Heading as="h1" color="blue.600" mb={4}>
               Book Your Consultation
             </Heading>
             <form>
