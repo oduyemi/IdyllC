@@ -1,8 +1,8 @@
-import { Box, Image, Text, Button, SimpleGrid, Heading, Flex } from "@chakra-ui/react";
+import { Box, Image, Text, Heading, Flex } from "@chakra-ui/react";
 import React from "react";
 import admission from "../assets/images/admission.jpg";
 import graduate from "../assets/images/graduate.jpg";
-import visa from "../assets/images/visa.jpg";
+// import visa from "../assets/images/visa.jpg";
 
 export const HomepageAbout: React.FC = () => {
     return (
