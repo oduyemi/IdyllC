@@ -58,7 +58,7 @@ export const HomepageService: React.FC = () => {
                 </SimpleGrid>
                 <Box className="my-5 text-center">
                                 <Link href="">
-                                    <Button variant="outline" size="lg" className="bg-blu py-3 px-5">
+                                    <Button colorScheme="blue" size="lg" className="py-3 px-5">
                                         Explore Services
                                     </Button>
                                 </Link>
