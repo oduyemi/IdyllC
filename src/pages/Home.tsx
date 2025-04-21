@@ -7,6 +7,7 @@ import { Facts } from "../components/Home/Facts";
 import { ExploreCourses } from "../components/Home/ExploreCourses";
 import { Booking } from "../components/Home/Booking";
 import { Footer } from "../navigation/Footer";
+import { TestimonialSlider } from "../components/Home/Testimonials";
 
 
 
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
             <HomepageAbout />
             <Facts />
             <ExploreCourses />
+            <TestimonialSlider />
             <Booking />
             <Footer />
         </Box>
