@@ -1,12 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { Banner } from "../components/Banner";
-import { HomepageService } from "../components/HomepageService";
-import { HomepageAbout } from "../components/HomepageAbout";
-import { Facts } from "../components/Facts";
-import { ExploreCourses } from "../components/ExploreCourses";
-import { Booking } from "../components/Booking";
-import { Footer } from "../components/Footer";
+import { Banner } from "../components/Home/Banner";
+import { HomepageService } from "../components/Home/HomepageService";
+import { HomepageAbout } from "../components/Home/HomepageAbout";
+import { Facts } from "../components/Home/Facts";
+import { ExploreCourses } from "../components/Home/ExploreCourses";
+import { Booking } from "../components/Home/Booking";
+import { Footer } from "../navigation/Footer";
 
 
 
