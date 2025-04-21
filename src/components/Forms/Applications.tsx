@@ -69,3 +69,23 @@ export const AccomodationAssistanceForm: React.FC = () => (
       ]}
     />
 );
+
+
+export const FlightReservationForm: React.FC = () => (
+  <MonochromeForm
+    title="Visa Assistance Application Form"
+    fields={[
+      { label: 'Full Name', type: 'text' },
+      { label: 'Email Address', type: 'email' },
+      { label: 'Phone Number', type: 'tel' },
+      { label: 'Country of Residence', type: 'text' },
+      { label: 'Departure City ', type: 'text' },
+      { label: 'Destination City', type: 'text' },
+      { label: 'Preferred Travel Date', type: 'text' },
+      { label: 'Budget for Flights', type: 'text' },
+      { label: 'Any specific travel preferences?', type: 'textarea' },
+      { label: 'Preferred Contact Method', type: 'select', options: ['Email', 'Phone', 'WhatsApp'] },
+      { label: 'How did you hear about us?', type: 'text' },
+    ]}
+  />
+);

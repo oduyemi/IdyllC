@@ -41,7 +41,7 @@ export const Banner: React.FC = () => {
                     subheading: "Admission is FREE",
                     heading: "Secure Your Admission Free of Charge",
                     text: "We believe that no one should pay to be admitted. Aside from any university application fees, our services are absolutely free.",
-                    btn1Link: "/services/admission",
+                    btn1Link: "/services/admissions",
                     btn2Link: "/about"
                 }, {
                     img: require("../../assets/images/home2.jpg"),

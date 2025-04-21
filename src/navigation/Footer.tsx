@@ -15,13 +15,13 @@ export const Footer: React.FC = () => {
               Find us on any of these platforms, we respond within 1-2 business days.
             </Text>
             <Stack direction="row" spacing={2} justify={{ base: "center", lg: "start" }}>
-              <Button as="a" href="#" bg="white" color="black" boxShadow="md" rounded="full">
+              <Button as="a" href="https://facebook.com/IdyllConsultsInternational" target="_blank" bg="white" color="black" boxShadow="md" rounded="full">
                 <Icon as={FaFacebookSquare} />
               </Button>
-              <Button as="a" href="#" bg="white" color="black" boxShadow="md" rounded="full">
+              <Button as="a" href="https://www.linkedin.com/company/idyll-consults-and-allied-limited" target="_blank" bg="white" color="black" boxShadow="md" rounded="full">
                 <Icon as={FaLinkedin} />
               </Button>
-              <Button as="a" href="#" bg="white" color="black" boxShadow="md" rounded="full">
+              <Button as="a" href="https://instagram.com/Idyllconsults" target="_blank" bg="white" color="black" boxShadow="md" rounded="full">
                 <Icon as={FaInstagram} />
               </Button>
             </Stack>
@@ -33,15 +33,15 @@ export const Footer: React.FC = () => {
                 Useful Links
               </Text>
               <Stack spacing={2}>
-                <Link href="#" color="gray.300" _hover={{ color: "white" }}>
+                <Link href="/about" color="gray.300" _hover={{ color: "white" }}>
                   About Us
                 </Link>
-                <Link href="#" color="gray.300" _hover={{ color: "white" }}>
+                <Link href="/services" color="gray.300" _hover={{ color: "white" }}>
                   Our Service
                 </Link>
-                <Link href="#" color="gray.300" _hover={{ color: "white" }}>
+                {/* <Link href="#" color="gray.300" _hover={{ color: "white" }}>
                   Our Courses
-                </Link>
+                </Link> */}
               </Stack>
             </Box>
             <Box>
@@ -49,13 +49,13 @@ export const Footer: React.FC = () => {
                 Other Resources
               </Text>
               <Stack spacing={2}>
-                <Link href="#" color="gray.300" _hover={{ color: "white" }}>
+                {/* <Link href="#" color="gray.300" _hover={{ color: "white" }}>
                   Terms & Conditions
                 </Link>
                 <Link href="#" color="gray.300" _hover={{ color: "white" }}>
                   Privacy Policy
-                </Link>
-                <Link href="#" color="gray.300" _hover={{ color: "white" }}>
+                </Link> */}
+                <Link href="/contact" color="gray.300" _hover={{ color: "white" }}>
                   Contact Us
                 </Link>
               </Stack>

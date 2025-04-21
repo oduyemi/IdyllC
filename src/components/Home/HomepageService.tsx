@@ -25,7 +25,7 @@ export const HomepageService: React.FC = () => {
       title: "Visa Assistance",
       imgSrc: visa,
       altText: "visa",
-      link: "/services/vis-assistance",
+      link: "/services/visa-assistance",
     },
   ];
 
