@@ -79,9 +79,12 @@ export const Booking: React.FC = () => {
                 <Input placeholder="Your Name" size="lg" bg={inputBg} borderColor={border} />
                 <Input type="email" placeholder="Your Email" size="lg" bg={inputBg} borderColor={border} />
                 <Select placeholder="Select A Service" size="lg" bg={inputBg} borderColor={border}>
+                  <option value="accomodation">Accomodation Assistance</option>
+                  <option value="career">Career Counselling</option>
+                  <option value="flight">Flight Reservation</option>
+                  <option value="admission">Secure Admission</option>
+                  <option value="student-counseling">Student Counseling</option>
                   <option value="visa-assistance">Visa Assistance</option>
-                  <option value="admission-counseling">Admission Counseling</option>
-                  <option value="accommodation-help">Accommodation Help</option>
                 </Select>
                 <Input type="date" size="lg" bg={inputBg} borderColor={border} />
                 <Textarea
