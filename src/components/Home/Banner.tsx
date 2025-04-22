@@ -27,7 +27,7 @@ export const Banner: React.FC = () => {
     pauseOnHover: true,
   };
 
-  const overlayBg = "rgba(0, 0, 0, 0.4)";
+  const overlayBg = "rgba(0, 0, 0, 0.65)";
 
   const buttonStyles = {
     variant: "outline",
