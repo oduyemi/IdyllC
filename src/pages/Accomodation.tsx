@@ -42,7 +42,8 @@ const Accomodation: React.FC = () => {
                     Accomodation Assistance
                     </Heading>
                     <Text fontSize="lg" color="gray.300">
-                    We are committed to guiding students on their academic journeys by offering expert counselling, global admissions support, and dedicated care.
+                        We provide expert guidance to help you navigate the accommodation process smoothly and efficiently.
+                        Our team is dedicated to ensuring you have all the necessary documents and information to secure your accommodation without any hassle.
                     </Text>
                 </Box>
             </MotionBox>

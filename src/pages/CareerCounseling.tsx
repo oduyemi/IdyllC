@@ -19,7 +19,7 @@ const CareerCounselling: React.FC = () => {
                 px={{ base: 6, md: 16 }}
                 textAlign="center"
                 color="white"
-                bgImage={`url(${require('../assets/images/house.jpg')})`}
+                bgImage={`url(${require('../assets/images/worker3.jpg')})`}
                 bgSize="cover"
                 bgRepeat="no-repeat"
                 sx={{ backgroundPositionY: "45%" }}
@@ -42,10 +42,11 @@ const CareerCounselling: React.FC = () => {
                     fontFamily="Georgia, serif"
                     mb={4}
                     >
-                    Accomodation Assistance
+                    Career Counselling
                     </Heading>
                     <Text fontSize="lg" color="gray.300">
-                    We are committed to guiding students on their academic journeys by offering expert counselling, global admissions support, and dedicated care.
+                        We help you navigate your career path with personalized guidance and support.
+                        Our expert team is dedicated to helping you identify your strengths, explore career options, and develop a roadmap for success.
                     </Text>
                 </Box>
             </MotionBox>

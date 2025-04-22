@@ -43,6 +43,7 @@ export const MonochromeForm: React.FC<{ title: string; fields: any[] }> = ({ tit
         textAlign="center"
         fontWeight="medium"
         letterSpacing="tight"
+        color="#e7a449"
       >
         {title}
       </Heading>
@@ -106,13 +107,13 @@ export const MonochromeForm: React.FC<{ title: string; fields: any[] }> = ({ tit
         <Button
           type="submit"
           mt={4}
-          bg="black"
+          bg="#CF0000"
           color="white"
           borderRadius="md"
           px={8}
           py={6}
           fontWeight="medium"
-          _hover={{ bg: 'gray.800' }}
+          _hover={{ bg: 'red.800' }}
           w="full"
         >
           Submit

@@ -12,10 +12,10 @@ export const AboutBanner: React.FC = () => {
       px={{ base: 6, md: 16 }}
       textAlign="center"
       color="white"
-      bgImage={`url(${require('../../assets/images/worker2.jpg')})`}
+      bgImage={`url(${require('../../assets/images/worker1.jpg')})`}
       bgSize="cover"
       bgRepeat="no-repeat"
-      sx={{ backgroundPositionY: "45%" }}
+      sx={{ backgroundPositionY: "25%" }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -38,7 +38,8 @@ export const AboutBanner: React.FC = () => {
           About Us
         </Heading>
         <Text fontSize="lg" color="gray.300">
-          We are committed to guiding students on their academic journeys by offering expert counselling, global admissions support, and dedicated care.
+          Excellence is not just a goal; it's our commitment. We are dedicated to providing the highest quality services to help you achieve your dreams.
+          Our team of experts is here to guide you every step of the way, ensuring that you have the support and resources you need to succeed.
         </Text>
       </Box>
     </MotionBox>

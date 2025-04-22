@@ -13,7 +13,7 @@ export const ServicesBanner: React.FC = () => {
         px={{ base: 6, md: 16 }}
         textAlign="center"
         color="white"
-        bgImage={`url(${require('../../assets/images/worker2b.jpg')})`}
+        bgImage={`url(${require('../../assets/images/service.jpg')})`}
         bgSize="cover"
         bgRepeat="no-repeat"
         sx={{ backgroundPositionY: "45%" }}

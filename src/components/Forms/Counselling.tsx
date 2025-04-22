@@ -4,7 +4,7 @@ import { MonochromeForm } from './TemplateForm';
 
 export const StudentCounsellingForm: React.FC = () => (
   <MonochromeForm
-    title="Student Counselling"
+    title="Student Counselling Application Form"
     fields={[
       { label: 'First Name', type: 'text' },
       { label: 'Last Name', type: 'text' },
@@ -23,7 +23,7 @@ export const StudentCounsellingForm: React.FC = () => (
 
 export const CareerCounsellingForm: React.FC = () => (
   <MonochromeForm
-    title="Career Counselling"
+    title="Career Counselling Application Form"
     fields={[
       { label: 'First Name', type: 'text' },
       { label: 'Last Name', type: 'text' },

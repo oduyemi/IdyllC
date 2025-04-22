@@ -12,7 +12,7 @@ export const ContactBanner: React.FC = () => {
       px={{ base: 6, md: 16 }}
       textAlign="center"
       color="white"
-      bgImage={`url(${require('../../assets/images/contact.jpg')})`}
+      bgImage={`url(${require('../../assets/images/contactus.jpg')})`}
       bgSize="cover"
       bgRepeat="no-repeat"
       sx={{ backgroundPositionY: "45%" }}
@@ -35,10 +35,10 @@ export const ContactBanner: React.FC = () => {
           fontFamily="Georgia, serif"
           mb={4}
         >
-          Services
+          Contact
         </Heading>
         <Text fontSize="lg" color="gray.300">
-          We are committed to guiding students on their academic journeys by offering expert counselling, global admissions support, and dedicated care.
+        We are just a message away! Reach out to us for any queries or assistance you may need.
         </Text>
       </Box>
     </MotionBox>
