@@ -1,10 +1,9 @@
 import React from "react";
-import { Box, Text, HStack, IconButton } from "@chakra-ui/react";
+import { Box, Text, HStack, IconButton, Link as ChakraLink } from "@chakra-ui/react";
 import {
   FaMapMarkerAlt,
   FaEnvelopeOpen,
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
@@ -24,17 +23,36 @@ export const TopBar: React.FC = () => {
           </HStack>
         </HStack>
         <HStack spacing={2}>
-          {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map((Icon, idx) => (
+          <ChakraLink href="https://facebook.com/IdyllConsultsInternational" isExternal>
             <IconButton
-              key={idx}
-              aria-label="social"
-              icon={<Icon />}
+              aria-label="Facebook"
+              icon={<FaFacebookF />}
               size="sm"
               variant="ghost"
               colorScheme="gray.400"
               _hover={{ bg: "whiteAlpha.300" }}
             />
-          ))}
+          </ChakraLink>
+          <ChakraLink href="https://instagram.com/Idyllconsults" isExternal>
+            <IconButton
+              aria-label="Instagram"
+              icon={<FaInstagram />}
+              size="sm"
+              variant="ghost"
+              colorScheme="gray.400"
+              _hover={{ bg: "whiteAlpha.300" }}
+            />
+          </ChakraLink>
+          <ChakraLink href="https://www.linkedin.com/company/idyll-consults-and-allied-limited" isExternal>
+            <IconButton
+              aria-label="LinkedIn"
+              icon={<FaLinkedinIn />}
+              size="sm"
+              variant="ghost"
+              colorScheme="gray.400"
+              _hover={{ bg: "whiteAlpha.300" }}
+            />
+          </ChakraLink>
         </HStack>
       </HStack>
     </Box>
