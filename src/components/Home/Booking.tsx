@@ -16,6 +16,8 @@ import React from "react";
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
+const MotionHeading = motion(Heading);
+const MotionText = motion(Text);
 
 export const Booking: React.FC = () => {
   const cardBg = useColorModeValue("white", "gray.800");
@@ -24,7 +26,7 @@ export const Booking: React.FC = () => {
 
   return (
     <Box my={10}>
-      {/* Header */}
+      {/* Header Section */}
       <MotionFlex
         alignItems="center"
         justifyContent="center"
@@ -39,21 +41,35 @@ export const Booking: React.FC = () => {
       >
         <Box
           position="absolute"
-          bg="rgba(0,0,0,0.5)"
+          bg="rgba(244,0,0,0.5)"
           top={0}
           left={0}
           w="100%"
           h="100%"
         />
         <Box position="relative" zIndex={1} textAlign="center" color="white">
-          <Heading size="2xl">International Student Booking</Heading>
-          <Text fontSize="xl" color="gray.200" mt={2}>
+          <MotionHeading
+            size="2xl"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            International Student Booking
+          </MotionHeading>
+          <MotionText
+            fontSize="xl"
+            color="gray.200"
+            mt={2}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
             Guidance & Support, 24/7
-          </Text>
+          </MotionText>
         </Box>
       </MotionFlex>
 
-      {/* Form */}
+      {/* Booking Form */}
       <MotionBox
         mt={16}
         px={4}
@@ -71,38 +87,58 @@ export const Booking: React.FC = () => {
             border="1px solid"
             borderColor={border}
           >
-            <Heading mb={6} fontSize="2xl" color={useColorModeValue("gray.800", "white")}>
+            <MotionHeading
+              mb={6}
+              fontSize="2xl"
+              color={useColorModeValue("#E7A449", "white")}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
               Book Your Consultation
-            </Heading>
+            </MotionHeading>
             <form>
               <Stack spacing={5}>
-                <Input placeholder="Your Name" size="lg" bg={inputBg} borderColor={border} />
-                <Input type="email" placeholder="Your Email" size="lg" bg={inputBg} borderColor={border} />
-                <Select placeholder="Select A Service" size="lg" bg={inputBg} borderColor={border}>
-                  <option value="accomodation">Accomodation Assistance</option>
-                  <option value="career">Career Counselling</option>
-                  <option value="flight">Flight Reservation</option>
-                  <option value="admission">Secure Admission</option>
-                  <option value="student-counseling">Student Counseling</option>
-                  <option value="visa-assistance">Visa Assistance</option>
-                </Select>
-                <Input type="date" size="lg" bg={inputBg} borderColor={border} />
-                <Textarea
-                  placeholder="Special Requests or Concerns"
-                  size="lg"
-                  bg={inputBg}
-                  borderColor={border}
-                />
-                <Button
-                  type="submit"
-                  bg="black"
-                  color="white"
-                  size="lg"
-                  _hover={{ bg: "gray.700" }}
-                  py={6}
+                {[
+                  <Input key="name" placeholder="Your Name" size="lg" bg={inputBg} borderColor={border} />,
+                  <Input key="email" type="email" placeholder="Your Email" size="lg" bg={inputBg} borderColor={border} />,
+                  <Select key="service" placeholder="Select A Service" size="lg" bg={inputBg} borderColor={border}>
+                    <option value="accomodation">Accomodation Assistance</option>
+                    <option value="career">Career Counselling</option>
+                    <option value="flight">Flight Reservation</option>
+                    <option value="admission">Secure Admission</option>
+                    <option value="student-counseling">Student Counseling</option>
+                    <option value="visa-assistance">Visa Assistance</option>
+                  </Select>,
+                  <Input key="date" type="date" size="lg" bg={inputBg} borderColor={border} />,
+                  <Textarea key="message" placeholder="Special Requests or Concerns" size="lg" bg={inputBg} borderColor={border} />,
+                ].map((field, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 + index * 0.1 }}
+                  >
+                    {field}
+                  </motion.div>
+                ))}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.1 }}
                 >
-                  Book Now
-                </Button>
+                  <Button
+                    type="submit"
+                    bg="#CF0000"
+                    color="white"
+                    size="lg"
+                    _hover={{ bg: "red.700" }}
+                    py={6}
+                    w="100%"
+                  >
+                    Book Now
+                  </Button>
+                </motion.div>
               </Stack>
             </form>
           </Box>

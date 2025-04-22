@@ -11,7 +11,7 @@ import {
 
 export const TopBar: React.FC = () => {
   return (
-    <Box bg="black" color="white" px={8} py={2} display={{ base: "none", lg: "block" }}>
+    <Box bg="#CF0000" color="white" px={8} py={2} display={{ base: "none", lg: "block" }}>
       <HStack justify="space-between" align="center">
         <HStack spacing={6} fontSize="sm" color="gray.300">
           <HStack spacing={2}>
@@ -31,7 +31,7 @@ export const TopBar: React.FC = () => {
               icon={<Icon />}
               size="sm"
               variant="ghost"
-              colorScheme="whiteAlpha"
+              colorScheme="gray.400"
               _hover={{ bg: "whiteAlpha.300" }}
             />
           ))}

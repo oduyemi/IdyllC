@@ -28,7 +28,7 @@ export const ContactForm = () => {
           <Textarea placeholder="How can we help you?" rows={5} />
         </FormControl>
 
-        <Button color="white" backgroundColor="#000" type="submit" w="full">
+        <Button color="white" backgroundColor="#CF0000" type="submit" w="full">
           Send Message
         </Button>
       </VStack>

@@ -1,25 +1,30 @@
 import React from 'react';
 import { Box, Heading, Text } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+
+const MotionBox = motion(Box);
 
 export const AboutBanner: React.FC = () => {
   return (
-    <Box
+    <MotionBox
       position="relative"
       py={28}
       px={{ base: 6, md: 16 }}
       textAlign="center"
       color="white"
-      bgImage={`url(${require('../../assets/images/abt1.jpg')})`}
+      bgImage={`url(${require('../../assets/images/worker2.jpg')})`}
       bgSize="cover"
       bgRepeat="no-repeat"
+      sx={{ backgroundPositionY: "45%" }}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
       _before={{
         content: '""',
         position: 'absolute',
         inset: 0,
         bg: 'blackAlpha.700',
-      }}
-      sx={{
-        backgroundPositionY: "26%"
       }}
     >
       <Box position="relative" zIndex={1} maxW="3xl" mx="auto">
@@ -36,6 +41,6 @@ export const AboutBanner: React.FC = () => {
           We are committed to guiding students on their academic journeys by offering expert counselling, global admissions support, and dedicated care.
         </Text>
       </Box>
-    </Box>
+    </MotionBox>
   );
 };

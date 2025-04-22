@@ -3,7 +3,9 @@ import React from "react";
 import { Footer } from "../navigation/Footer";
 import { ServicesBanner } from "../components/Services/Banner";
 import { VisaAssistanceForm } from "../components/Forms/Applications";
+import { motion } from 'framer-motion';
 
+const MotionBox = motion(Box);
 
 
 
@@ -13,8 +15,8 @@ const VisaAssistance: React.FC = () => {
         <Box>
             <ServicesBanner />
             <Box maxW="2xl" mx="auto" px={6} py={12}>
-                <Heading as="h1" fontSize="3xl" mb={6} fontWeight="bold" textAlign="center">
-                    Secure your visa without hassle
+                <Heading as="h1" fontSize="3xl" mb={6} fontWeight="bold" color="#e7a449" textAlign="center">
+                    Secure Your Visa Without Hassle
                 </Heading>
                 <Text fontSize="lg" lineHeight="1.6" textAlign="center" color="gray.600">
                     Navigating visa requirements can be tricky, but our step-by-step support makes it easier.

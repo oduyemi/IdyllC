@@ -1,12 +1,37 @@
-import { Box, Text, Flex, Button, Link, Icon, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Flex,
+  Button,
+  Link,
+  Icon,
+  Stack,
+} from "@chakra-ui/react";
 import { FaFacebookSquare, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 import React from "react";
+
+const MotionBox = motion(Box);
 
 export const Footer: React.FC = () => {
   return (
-    <Box as="footer" bg="black" color="white" pt={8} pb={6}>
-      <Box maxW="7xl" mx="auto" px={4}>
-        <Flex flexWrap="wrap" justifyContent={{ base: "center", lg: "space-between" }} textAlign={{ base: "center", lg: "left" }}>
+    <MotionBox
+      as="footer"
+      bg="black"
+      color="white"
+      pt={8}
+      pb={6}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
+      <Box maxW="7xl" mx="auto" px={{ base: 6, md: 4 }}>
+        <Flex
+          flexWrap="wrap"
+          justifyContent={{ base: "center", lg: "space-between" }}
+          textAlign={{ base: "center", lg: "left" }}
+        >
           <Box w={{ base: "full", lg: "50%" }} px={4}>
             <Text as="h4" fontSize="3xl" fontWeight="bold" color="white">
               Let's keep in touch!
@@ -15,19 +40,57 @@ export const Footer: React.FC = () => {
               Find us on any of these platforms, we respond within 1-2 business days.
             </Text>
             <Stack direction="row" spacing={2} justify={{ base: "center", lg: "start" }}>
-              <Button as="a" href="https://facebook.com/IdyllConsultsInternational" target="_blank" bg="white" color="black" boxShadow="md" rounded="full">
+              <Button
+                as="a"
+                href="https://facebook.com/IdyllConsultsInternational"
+                target="_blank"
+                bg="white"
+                color="black"
+                boxShadow="md"
+                rounded="full"
+                aria-label="Visit us on Facebook"
+                _hover={{ transform: "scale(1.1)", bg: "gray.100" }}
+              >
                 <Icon as={FaFacebookSquare} />
               </Button>
-              <Button as="a" href="https://www.linkedin.com/company/idyll-consults-and-allied-limited" target="_blank" bg="white" color="black" boxShadow="md" rounded="full">
+              <Button
+                as="a"
+                href="https://www.linkedin.com/company/idyll-consults-and-allied-limited"
+                target="_blank"
+                bg="white"
+                color="black"
+                boxShadow="md"
+                rounded="full"
+                aria-label="Visit us on LinkedIn"
+                _hover={{ transform: "scale(1.1)", bg: "gray.100" }}
+              >
                 <Icon as={FaLinkedin} />
               </Button>
-              <Button as="a" href="https://instagram.com/Idyllconsults" target="_blank" bg="white" color="black" boxShadow="md" rounded="full">
+              <Button
+                as="a"
+                href="https://instagram.com/Idyllconsults"
+                target="_blank"
+                bg="white"
+                color="black"
+                boxShadow="md"
+                rounded="full"
+                aria-label="Visit us on Instagram"
+                _hover={{ transform: "scale(1.1)", bg: "gray.100" }}
+              >
                 <Icon as={FaInstagram} />
               </Button>
             </Stack>
           </Box>
 
-          <Flex w={{ base: "full", lg: "50%" }} justify={{ base: "center", lg: "space-between" }} px={4} mt={{ base: 6, lg: 0 }}>
+          <Flex
+            w={{ base: "full", lg: "50%" }}
+            direction={{ base: "column", md: "row" }}
+            justify={{ base: "center", lg: "space-between" }}
+            align={{ base: "center", md: "flex-start" }}
+            px={4}
+            gap={6}
+            mt={{ base: 6, lg: 0 }}
+          >
             <Box>
               <Text textTransform="uppercase" fontWeight="bold" fontSize="sm" color="gray.400" mb={2}>
                 Useful Links
@@ -39,9 +102,6 @@ export const Footer: React.FC = () => {
                 <Link href="/services" color="gray.300" _hover={{ color: "white" }}>
                   Our Service
                 </Link>
-                {/* <Link href="#" color="gray.300" _hover={{ color: "white" }}>
-                  Our Courses
-                </Link> */}
               </Stack>
             </Box>
             <Box>
@@ -49,12 +109,6 @@ export const Footer: React.FC = () => {
                 Other Resources
               </Text>
               <Stack spacing={2}>
-                {/* <Link href="#" color="gray.300" _hover={{ color: "white" }}>
-                  Terms & Conditions
-                </Link>
-                <Link href="#" color="gray.300" _hover={{ color: "white" }}>
-                  Privacy Policy
-                </Link> */}
                 <Link href="/contact" color="gray.300" _hover={{ color: "white" }}>
                   Contact Us
                 </Link>
@@ -71,6 +125,6 @@ export const Footer: React.FC = () => {
           </Text>
         </Flex>
       </Box>
-    </Box>
+    </MotionBox>
   );
 };

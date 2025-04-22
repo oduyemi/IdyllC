@@ -34,7 +34,7 @@ export const NavBar: React.FC = () => {
         alignItems="center"
       >
         <Link href="/" fontWeight="bold" fontSize="2xl" color="black">
-          IdyllC
+          <img src={require("../assets/images/logo.png")} alt="site logo" width="50%" />
         </Link>
 
         <IconButton
@@ -50,25 +50,25 @@ export const NavBar: React.FC = () => {
           display={{ base: "none", lg: "flex" }}
           alignItems="center"
         >
-          <Link href="/" color="gray.700" _hover={{ color: "black" }}>
+          <Link href="/" color="gray.700" _hover={{ color: "#CF0000" }}>
             <HStack spacing={1}>
               <FaHome />
               <Text>Home</Text>
             </HStack>
           </Link>
-          <Link href="/about" color="gray.700" _hover={{ color: "black" }}>
+          <Link href="/about" color="gray.700" _hover={{ color: "#CF0000" }}>
             <HStack spacing={1}>
               <FaInfoCircle />
               <Text>About</Text>
             </HStack>
           </Link>
-          <Link href="/services" color="gray.700" _hover={{ color: "black" }}>
+          <Link href="/services" color="gray.700" _hover={{ color: "#CF0000" }}>
             <HStack spacing={1}>
               <FaServicestack />
               <Text>Services</Text>
             </HStack>
           </Link>
-          <Link href="/contact" color="gray.700" _hover={{ color: "black" }}>
+          <Link href="/contact" color="gray.700" _hover={{ color: "#CF0000" }}>
             <HStack spacing={1}>
               <FaEnvelope />
               <Text>Contact</Text>
@@ -78,7 +78,7 @@ export const NavBar: React.FC = () => {
 
         <HStack
           spacing={3}
-          bg="black"
+          bg="#CF0000"
           color="white"
           px={4}
           py={2}
@@ -87,7 +87,7 @@ export const NavBar: React.FC = () => {
         >
           <Box
             bg="white"
-            color="black"
+            color="#E7A449"
             p={2}
             rounded="full"
             display="flex"

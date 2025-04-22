@@ -6,10 +6,12 @@ import {
   Flex,
   Icon,
   Link,
+  Button,
   useColorModeValue,
   Grid,
+  chakra,
 } from "@chakra-ui/react";
-import { FaCheck, FaArrowRight } from "react-icons/fa";
+import { FaCheck, FaArrowRight, FaGraduationCap } from "react-icons/fa";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -24,74 +26,96 @@ const spring = {
 export const ExploreCourses: React.FC = () => {
   const bg = useColorModeValue("white", "gray.900");
   const cardBg = useColorModeValue("white", "gray.800");
-  const borderColor = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
-  const textPrimary = useColorModeValue("black", "white");
+  const borderColor = useColorModeValue("gray.200", "whiteAlpha.300");
+  const textPrimary = useColorModeValue("gray.900", "white");
   const textSecondary = useColorModeValue("gray.600", "gray.400");
+  const brandRed = "#CF0000";
+  const brandGold = "#E7A449";
 
   const degrees = [
     {
-      title: "Bachelor’s Degree (BSc)",
+      title: "BSc Nursing in Malta with EU RN",
       values: ["Foundational knowledge", "Diverse fields", "Career-ready skills"],
     },
     {
-      title: "Master’s Degree",
+      title: "Medicine and Surgery in Europe",
       values: ["Advanced depth", "Focused learning", "Industry-prepared"],
     },
     {
-      title: "MRes Programs",
+      title: "I.T Courses in Europe",
       values: ["Research-driven", "Academic rigor", "Postgraduate-ready"],
     },
     {
-      title: "PhD Programs",
+      title: "Health, Social Care and Wellbeing in England",
       values: ["Independent research", "Expert guidance", "Thesis development"],
     },
+    {
+      title: "MBA in Europe",
+      values: ["Independent research", "Expert guidance", "Thesis development"],
+    },
+    {
+      title: "BSc/Top-Up/MSc/PHD",
+      values: ["Independent research", "Expert guidance", "Thesis development"],
+    }
   ];
 
   return (
     <Box py={24} px={{ base: 6, lg: 24 }} bg={bg} color={textPrimary}>
-      <Grid
-        templateColumns={{ base: "1fr", lg: "0.6fr 1.4fr" }}
-        gap={12}
-      >
-        {/* Left Tagline */}
+      <Grid templateColumns={{ base: "1fr", lg: "0.6fr 1.4fr" }} gap={12}>
+        {/* Left Enhancement */}
         <Flex
-          display={{ base: "none", lg: "flex" }}
-          alignItems="center"
-          justifyContent="center"
+          direction="column"
+          align="center"
+          justify="center"
+          bgGradient={`linear(to-b, ${brandRed} 0%, ${brandRed}70 100%)`}
+          px={6}
+          py={10}
+          rounded="2xl"
+          shadow="md"
         >
+          <Icon as={FaGraduationCap} boxSize={12} color="white" mb={4} />
           <MotionHeading
             as="h1"
-            fontSize="6xl"
-            fontWeight="light"
-            transform="rotate(-90deg)"
-            color="blackAlpha.600"
-            letterSpacing="wider"
+            fontSize="3xl"
+            fontWeight="bold"
+            color="white"
+            letterSpacing="wide"
             textAlign="center"
-            opacity={0.2}
-            animate={{ opacity: 1 }}
-            transition={spring}  
+            animate={{ y: [10, 0, 10] }}
+            transition={{ repeat: Infinity, duration: 3 }}
           >
             Learn. Grow. Excel.
           </MotionHeading>
+          <Text mt={4} fontSize="md" color="whiteAlpha.800" textAlign="center" maxW="xs">
+            Empowering your academic journey through personalized pathways and global partnerships.
+          </Text>
         </Flex>
 
-        {/* Right Content */}
+        {/* Main Content */}
         <Box>
           <Box textAlign={{ base: "center", lg: "left" }} mb={12}>
             <Text
-              fontSize="xs"
+              fontSize="sm"
               textTransform="uppercase"
-              color="blackAlpha.500"
-              letterSpacing="wide"
+              color="gray.500"
+              letterSpacing="wider"
+              mb={2}
             >
               Academic Pathways
             </Text>
-            <Heading fontSize="3xl" fontWeight="medium" mb={3}>
+            <Heading
+              fontSize={{ base: "2xl", md: "3xl" }}
+              color={brandGold}
+              fontWeight="semibold"
+              mb={4}
+              lineHeight="shorter"
+            >
               Explore Your Future with Us
             </Heading>
             <Text fontSize="md" color={textSecondary} maxW="xl">
               We offer a wide range of degree programs tailored to your goals. 
-              Our counselling sessions help match students with the right academic path—whether it's an undergraduate, postgraduate, or research degree.
+              Our counseling sessions help match students with the right academic path—
+              whether it's an undergraduate, postgraduate, or research degree.
             </Text>
           </Box>
 
@@ -101,47 +125,48 @@ export const ExploreCourses: React.FC = () => {
                 key={index}
                 bg={cardBg}
                 p={6}
-                rounded="xl"
+                rounded="2xl"
                 border="1px solid"
                 borderColor={borderColor}
-                initial={{ opacity: 0, y: 20 }}
+                shadow="sm"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 8px 20px rgba(0, 0, 0, 0.08)",
+                  scale: 1.03,
+                  shadow: "lg",
                   transition: { duration: 0.3 },
                 }}
               >
-                <Heading fontSize="xl" fontWeight="semibold" mb={3}>
+                <Heading fontSize="xl" fontWeight="semibold" mb={4} color={brandGold}>
                   {degree.title}
                 </Heading>
                 <Box mb={4}>
                   {degree.values.map((val, i) => (
-                    <Text key={i} fontSize="sm" mb={1} color={textSecondary}>
+                    <Text key={i} fontSize="sm" color={textSecondary} mb={2}>
                       <Icon
                         as={FaCheck}
-                        color="black"
+                        color={brandRed}
                         mr={2}
-                        fontSize="xs"
+                        fontSize="sm"
                         verticalAlign="middle"
                       />
                       {val}
                     </Text>
                   ))}
                 </Box>
-                <Link
+                <Button
+                  size="sm"
+                  rightIcon={<FaArrowRight />}
+                  colorScheme="red"
+                  bg={brandRed}
+                  _hover={{ bg: "#b00000" }}
+                  as={Link}
                   href="/services/student-counselling"
-                  fontSize="sm"
-                  fontWeight="medium"
-                  display="inline-flex"
-                  alignItems="center"
-                  color="black"
                   mt={2}
-                  _hover={{ textDecoration: "underline", color: "blackAlpha.800" }}
                 >
-                  Talk to a Counselor <Icon as={FaArrowRight} ml={2} />
-                </Link>
+                  Talk to a Counselor
+                </Button>
               </MotionBox>
             ))}
           </SimpleGrid>

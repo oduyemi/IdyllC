@@ -8,6 +8,7 @@ import { ExploreCourses } from "../components/Home/ExploreCourses";
 import { Booking } from "../components/Home/Booking";
 import { Footer } from "../navigation/Footer";
 import { TestimonialSlider } from "../components/Home/Testimonials";
+import { Partners } from "../components/Home/Partners";
 
 
 
@@ -17,6 +18,9 @@ const Home: React.FC = () => {
     return(
         <Box>
             <Banner />
+            <Box mt={{md:-20}}>
+                <Partners />
+            </Box>
             <HomepageService />
             <HomepageAbout />
             <Facts />

@@ -3,7 +3,9 @@ import React from "react";
 import { Footer } from "../navigation/Footer";
 import { ServicesBanner } from "../components/Services/Banner";
 import { StudentCounsellingForm } from "../components/Forms/Counselling";
+import { motion } from 'framer-motion';
 
+const MotionBox = motion(Box);
 
 
 
@@ -13,8 +15,8 @@ const StudentCounselling: React.FC = () => {
         <Box>
             <ServicesBanner />
             <Box maxW="2xl" mx="auto" px={6} py={12}>
-                <Heading as="h1" fontSize="3xl" mb={6} fontWeight="bold" textAlign="center">
-                    Make the best decisions for your future
+                <Heading as="h1" fontSize="3xl" mb={6} fontWeight="bold" color="#e7a449" textAlign="center">
+                    Make The Best Decisions For Your Future
                 </Heading>
                 <Text fontSize="lg" lineHeight="1.6" textAlign="center" color="gray.600">
                     Whether you're unsure about which country to choose or need guidance on balancing

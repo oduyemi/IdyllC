@@ -4,7 +4,7 @@ import React from "react";
 
 export const Facts: React.FC = () => {
   return (
-    <Box bg="gray.800" py={10}>
+    <Box bg="#CF0000" py={10}>
       <Box maxW="7xl" mx="auto" px={4}>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8}>
           <Box textAlign="center">

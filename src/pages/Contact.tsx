@@ -38,7 +38,7 @@ import {
                 size="2xl"
                 fontFamily="Georgia, serif"
                 fontWeight="normal"
-                color={textColor}
+                color="#E7A449"
                 mb={4}
               >
                 Get in Touch

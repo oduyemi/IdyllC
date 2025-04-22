@@ -44,7 +44,7 @@ export const TestimonialSlider: React.FC = () => {
 
   return (
     <Box py={20} px={4} bg={bgColor} color={textColor} maxW="6xl" mx="auto">
-      <Heading textAlign="center" fontSize="3xl" mb={8} color={textColor}>
+      <Heading textAlign="center" fontSize="3xl" mb={8} color="#E7A449">
         What Students Say
       </Heading>
       <Slider {...settings}>

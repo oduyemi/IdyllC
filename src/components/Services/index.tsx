@@ -72,7 +72,7 @@ export const Services: React.FC = () => {
           className="animate__animated animate__fadeInDown"
           fontFamily="Georgia, serif"
           fontWeight="medium"
-          color="black"
+          color="#E7A449"
           mb={4}
         >
           Empowering Your Educational Journey
@@ -113,8 +113,8 @@ export const Services: React.FC = () => {
                 justifyContent="space-between"
                 w="full"
               >
-                <Icon as={service.icon} w={6} h={6} color="black" />
-                <Heading as="h3" size="md" color="black" fontWeight="medium">
+                <Icon as={service.icon} w={6} h={6} color="#CF0000" />
+                <Heading as="h3" size="md" color="#E7A449" fontWeight="medium">
                   {service.title}
                 </Heading>
                 <Button
@@ -122,9 +122,11 @@ export const Services: React.FC = () => {
                   to={service.link}
                   variant="ghost"
                   borderRadius="full"
-                  border="1px solid black"
+                  bgColor="#CF0000"
+                  color="#fff"
+                  border="1px solid #CF0000"
                   size="sm"
-                  _hover={{ bg: "black", color: "white" }}
+                  _hover={{ bg: "transparent", color: "#CF0000" }}
                 >
                   →
                 </Button>
