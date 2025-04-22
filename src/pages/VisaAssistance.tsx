@@ -19,7 +19,7 @@ const VisaAssistance: React.FC = () => {
                 px={{ base: 6, md: 16 }}
                 textAlign="center"
                 color="white"
-                bgImage={`url(${require('../assets/images/visa.jpg')})`}
+                bgImage={`url(${require('../assets/images/visa2.jpg')})`}
                 bgSize="cover"
                 bgRepeat="no-repeat"
                 sx={{ backgroundPositionY: "45%" }}
