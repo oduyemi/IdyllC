@@ -105,7 +105,7 @@ export const PortHarcourtAddress: React.FC = () => {
         <Modal isOpen={isOpen} onClose={onClose} size="4xl" isCentered>
           <ModalOverlay />
           <ModalContent bg="#fff" transition="transform 0.3s ease-out">
-            <ModalHeader color="#e7a449">Port Harcourt Map</ModalHeader>
+            <ModalHeader color="#e7a449">Our Port Harcourt Office</ModalHeader>
             <ModalCloseButton color="#cf0000" />
             <ModalBody p={0}>
               <iframe
