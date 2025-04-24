@@ -21,13 +21,8 @@ export const HomepageAbout: React.FC = () => {
             textTransform="uppercase"
             color="#E7A449"
           >
-            About Us
-          </Heading>
-
-          <Text fontSize="xl" fontWeight="medium" mb={4} color="gray.600">
             Your educational journey becomes our shared success
-          </Text>
-
+          </Heading>
           <Text mb={6} color="gray.700" lineHeight="1.8">
             Idyll Consults is committed to{" "}
             <Text as="span" fontWeight="bold" color="#CF0000">

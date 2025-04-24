@@ -1,8 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import { Footer } from "../navigation/Footer";
-import { ServicesBanner } from "../components/Services/Banner";
-import { AdmissionForm, FlightReservationForm } from "../components/Forms/Applications";
+import { FlightReservationForm } from "../components/Forms/Applications";
 import { motion } from 'framer-motion';
 
 const MotionBox = motion(Box);
@@ -63,7 +61,6 @@ const Reservations: React.FC = () => {
             <Box className="my-6">
                 <FlightReservationForm />
             </Box>
-            <Footer />
         </Box>
     )
 }

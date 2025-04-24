@@ -13,10 +13,10 @@ export const ServicesBanner: React.FC = () => {
         px={{ base: 6, md: 16 }}
         textAlign="center"
         color="white"
-        bgImage={`url(${require('../../assets/images/service.jpg')})`}
+        bgImage={`url(${require('../../assets/images/serv.jpg')})`}
         bgSize="cover"
         bgRepeat="no-repeat"
-        sx={{ backgroundPositionY: "45%" }}
+        sx={{ backgroundPositionY: "15%" }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

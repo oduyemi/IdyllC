@@ -1,7 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import { Footer } from "../navigation/Footer";
-import { ServicesBanner } from "../components/Services/Banner";
 import { StudentCounsellingForm } from "../components/Forms/Counselling";
 import { motion } from 'framer-motion';
 
@@ -63,7 +61,6 @@ const StudentCounselling: React.FC = () => {
             <Box className="my-6">
                 <StudentCounsellingForm />
             </Box>
-            <Footer />
         </Box>
     )
 }

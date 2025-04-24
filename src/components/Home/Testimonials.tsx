@@ -3,25 +3,41 @@ import Slider from "react-slick";
 import { Box, Text, Heading, Avatar, Flex, useColorModeValue } from "@chakra-ui/react";
 import Precious from "../../assets/images/precious.jpeg";
 import John from "../../assets/images/john.jpeg";
+import MP from "../../assets/images/mp.jpg";
+import Chioma from "../../assets/images/chioma.jpg";
+import Oluchi from "../../assets/images/oluchi.jpg";
+
 
 const testimonials = [
   {
     name: "Ojemaye P. Onyeka",
     text: "Our experience with Idyll Consult was one of a kind! I highly recommend working with the Idyll Consults. My application was processed, and I was super relaxed throughout the entire process.",
     image: Precious,
-    university: "Niagara University (Canada)",
+    university: "Niagara University, Canada",
   },
   {
     name: "Mmezi Precious",
     text: "I am impressed with this agency’s professional approach and their efficient staff. They completed my application on time and helped with my flight and even bus itinerary. I highly recommend them.",
-    image: "",
-    university: "University of Windsor (Canada)",
+    image: MP,
+    university: "University of Windsor, Canada",
   },
   {
     name: "Ibekwe John",
     text: "Idyll Consults is the best company for studying abroad in Nigeria. I highly recommend them.",
     image: John,
     university: "University of East London (UK)",
+  },
+  {
+    name: "CHIOMA UZOH",
+    text: "I 100% recommend Idyll Consults and Allied Ltd. They handled my application professionally and made sure that my trust in them was not in futility",
+    image: Chioma,
+    university: "FDU VANCOUVER",
+  },
+  {
+    name: "Oluchi Emmanuella Agwunobi",
+    text: "Mr Jude of Idyll Consults was the driving force behind my successful application to study Nursing in Scotland. The team was very professional professional and the whole process was very smooth from start to finish. I strongly recommend this agency to anyone wishing to study abroad.",
+    image: Oluchi,
+    university: "GCU Scotland",
   },
 ];
 

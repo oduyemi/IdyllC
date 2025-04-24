@@ -9,10 +9,11 @@ import {
   } from "@chakra-ui/react";
   import React from "react";
   import { ContactBanner } from "../components/Contact/Banner";
-  import { Footer } from "../navigation/Footer";
   import { ContactInfo } from "../components/Contact/ContactInfo";
   import { ContactForm } from "../components/Forms/ContactForm";
   import { motion } from "framer-motion";
+import { LocationMap } from "../components/Contact/LocationMap";
+import { PortHarcourtAddress } from "../components/Contact/PortHarcourtOffice";
   
   const MotionBox = motion(Box);
   
@@ -25,7 +26,7 @@ import {
     return (
       <Box bg={bg}>
         <ContactBanner />
-  
+        <LocationMap />
         <Box py={[12, 20]} px={[4, 6, 10]} maxW="7xl" mx="auto">
           <VStack spacing={16} align="stretch">
             <MotionBox
@@ -78,8 +79,7 @@ import {
             </SimpleGrid>
           </VStack>
         </Box>
-  
-        <Footer />
+        <PortHarcourtAddress />
       </Box>
     );
   };

@@ -14,6 +14,8 @@ import CareerCounselling from "../pages/CareerCounseling";
 import StudentCounselling from "../pages/StudentCounseling";
 import Accomodation from "../pages/Accomodation";
 import Reservations from "../pages/Reservations";
+import { WhatsAppChatButton } from "../components/LiveChat";
+import { Footer } from "./Footer";
 
 export const Navigation: React.FC = () => {
     return (
@@ -34,6 +36,8 @@ export const Navigation: React.FC = () => {
                     <Route path="/services/student-counselling" element={<StudentCounselling />} />
                     <Route path="*" element={<Error404 />} />
                 </Routes>
+                <WhatsAppChatButton />
+                <Footer />
             </BrowserRouter>
         </ChakraProvider>
     );
