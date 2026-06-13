@@ -73,6 +73,7 @@ export const LocationMap: React.FC = () => {
               }}
             >
               <iframe
+                title="IDYLL Consults International Office Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3517269733356!2d3.348852074947899!3d6.603139322232863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b935c891f1785%3A0x61fb37e6299fd8a1!2sIDYLL%20Consults%20International!5e0!3m2!1sen!2sng!4v1745485431254!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
@@ -80,7 +81,7 @@ export const LocationMap: React.FC = () => {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
             </Box>
           </motion.div>
         </MotionBox>
