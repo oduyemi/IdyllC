@@ -1,9 +1,9 @@
 import {
     Box,
     Heading,
-    useColorModeValue,
-    useTheme,
-    useBreakpointValue,
+    useColorModeValue
+    // useTheme,
+    // useBreakpointValue,
   } from '@chakra-ui/react';
   import { motion } from 'framer-motion';
   import React from 'react';

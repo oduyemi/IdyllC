@@ -4,7 +4,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
 export const ContactInfo: React.FC = () => {
   const textColor = useColorModeValue("brand.text", "brand.text");
-  const iconColor = useColorModeValue("brand.primary", "brand.primary");
+  // const iconColor = useColorModeValue("brand.primary", "brand.primary");
 
   return (
     <VStack align="start" spacing={6} maxW="600px" mx="auto" px={{ base: 4, md: 8 }}>

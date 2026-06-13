@@ -111,6 +111,7 @@ export const PortHarcourtAddress: React.FC = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.0361482836713!2d7.008274374934899!3d4.832245440864413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cb1239c139f1%3A0xf8724a8e3e7509aa!2s245%20Aba%20Rd%2C%20Rumuola%2C%20Port%20Harcourt%2C%20Rivers!5e0!3m2!1sen!2sng!4v1713976458966!5m2!1sen!2sng"
                 width="100%"
+                title="Port Harcourt Office Location"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen

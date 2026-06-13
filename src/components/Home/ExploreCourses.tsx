@@ -9,7 +9,6 @@ import {
   Button,
   useColorModeValue,
   Grid,
-  chakra,
 } from "@chakra-ui/react";
 import { FaCheck, FaArrowRight, FaGraduationCap } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -17,11 +16,11 @@ import React from "react";
 
 const MotionBox = motion(Box);
 const MotionHeading = motion(Heading);
-const spring = {
-  type: "spring",
-  damping: 25,
-  stiffness: 200,
-};
+// const spring = {
+//   type: "spring",
+//   damping: 25,
+//   stiffness: 200,
+// };
 
 export const ExploreCourses: React.FC = () => {
   const bg = useColorModeValue("white", "gray.900");

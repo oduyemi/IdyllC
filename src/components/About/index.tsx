@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const MotionBox = motion(Box);
 
 export const AboutSection = () => {
-  const textColor = useColorModeValue("gray.800", "gray.200");
+  // const textColor = useColorModeValue("gray.800", "gray.200");
   const accentColor = useColorModeValue("gray.600", "gray.400");
   const borderColor = useColorModeValue("gray.200", "gray.700");
 

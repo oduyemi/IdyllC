@@ -10,7 +10,7 @@ import {
   VStack,
   Heading,
   useBreakpointValue,
-  FormErrorMessage,
+  // FormErrorMessage,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 

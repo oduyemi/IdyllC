@@ -2,14 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Heading, Text, Button, Flex, Image, background } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Flex, Image } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import home1 from "../../assets/images/home1.jpg";
 import home2 from "../../assets/images/home2.jpg";
 
-const MotionBox = motion(Box);
+// const MotionBox = motion(Box);
 const MotionText = motion(Text);
 const MotionHeading = motion(Heading);
 const MotionFlex = motion(Flex);
